@@ -1,0 +1,1 @@
+ALTER TABLE draws ADD COLUMN prize_color TEXT NOT NULL DEFAULT '';
