@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "stamp-rally-roulette-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-22",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stamp-rally-roulette"
+    }
+  ],
+  "secrets": {
+    "required": ["WRITE_TOKEN"]
+  }
+}
