@@ -10,15 +10,20 @@
     "migrate:remote": "wrangler d1 migrations apply DB --remote",
     "types": "wrangler types",
     "typecheck": "tsc --noEmit",
-    "test": "vitest"
+    "test": "vitest",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint"
   },
   "dependencies": {
-    "hono": "4.13.13"
+    "hono": "4.13.16"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "0.23.0",
-    "typescript": "6.0.3",
-    "vitest": "4.1.12",
-    "wrangler": "4.152.0"
+    "oxfmt": "0.76.0",
+    "oxlint": "1.91.0",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0",
+    "wrangler": "4.158.0"
   }
 }

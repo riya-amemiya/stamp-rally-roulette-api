@@ -1,23 +1,21 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "stamp-rally-roulette-api",
-	"main": "src/index.ts",
-	"compatibility_date": "2026-08-22",
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "stamp-rally-roulette",
-			"database_id": "79514caa-83f8-4a5d-a317-e2b514840d1a"
-		}
-	],
-	"secrets": {
-		"required": [
-			"WRITE_TOKEN"
-		]
-	},
-	"observability": {
-		"logs": {
-			"enabled": true
-		}
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "stamp-rally-roulette-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-22",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stamp-rally-roulette",
+      "database_id": "79514caa-83f8-4a5d-a317-e2b514840d1a",
+    },
+  ],
+  "secrets": {
+    "required": ["WRITE_TOKEN"],
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+    },
+  },
 }

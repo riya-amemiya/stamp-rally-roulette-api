@@ -64,9 +64,9 @@ beforeEach(async () => {
 describe("POST /snapshot", () => {
   describe("when the bearer token is wrong", () => {
     it("responds 401 and stores nothing", async () => {
-      expect((await request("POST", "/snapshot", snapshot([draw("T1")]), "Bearer wrong")).status).toBe(
-        401,
-      );
+      expect(
+        (await request("POST", "/snapshot", snapshot([draw("T1")]), "Bearer wrong")).status,
+      ).toBe(401);
       expect(await rows()).toEqual([]);
     });
   });
@@ -80,9 +80,9 @@ describe("POST /snapshot", () => {
   describe("when a history entry lacks the prize color", () => {
     it("responds 400", async () => {
       const { prizeColor: _, ...entry } = draw("T1");
-      expect((await request("POST", "/snapshot", { prizes, settings, history: [entry] })).status).toBe(
-        400,
-      );
+      expect(
+        (await request("POST", "/snapshot", { prizes, settings, history: [entry] })).status,
+      ).toBe(400);
     });
   });
 
